@@ -17,14 +17,14 @@ function searchName(input, outputCount, callback) {
 
 
 function validasiInput(input) {
-    if (input == "") throw "Data Search Kosong";
+    if (input === "") throw "Data Search Kosong";
     if (!isNaN(input)) throw "Data Search Harus String";
 };
 
 
 
 function validasiOutputCount(outputCount) {
-    if (outputCount == "") throw "Data Output Kosong";
+    if (outputCount === "") throw "Data Output Kosong";
     if (isNaN(outputCount)) throw "Data Output Harus Number";
     outputCount = Number(outputCount);
 };
@@ -60,4 +60,13 @@ function callback(result) {
 };
 
 
-searchName("an", 3, callback)
+searchName("an", 3, callback);
+
+//testing error
+searchName("", 3, callback);
+
+searchName(1, 3, callback);
+
+searchName("an", "", callback);
+
+searchName("an", "saya", callback);
