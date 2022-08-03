@@ -9,15 +9,15 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
 }
 
 function cekValidasi_nilaiAwal_nilaiAkhir(nilaiAwal, nilaiAkhir) {
-  if (nilaiAwal === "") throw "Angka dalam nilai awal Kosong, Mohon isi kembali";
-  if (isNaN(nilaiAwal)) throw "Angka dalam nilai awal bukan angka, mohon isi kembali";
-  if (nilaiAkhir === "") throw "Angka dalam nilai akhir Kosong, Mohon isi kembali";
-  if (isNaN(nilaiAkhir)) throw "Angka dalam nilai akhir bukan angka, mohon isi kembali";
+  if (nilaiAwal === "") throw "Nilai awal kosong";
+  if (isNaN(nilaiAwal)) throw "Nilai awal harus berupa Angka";
+  if (nilaiAkhir === "") throw "Nilai akhir kosong";
+  if (isNaN(nilaiAkhir)) throw "Nilai akhir harus berupa Angka";
   if (nilaiAkhir < nilaiAwal) throw "Nilai akhir harus lebih besar dari nilai awal";
 }
 
 function cekValidasi_dataArray(dataArray) {
-  if (dataArray === "") throw "Angka dalam dataArray Kosong, Mohon isi kembali";
+  if (dataArray === "") throw "Angka dalam dataArray Kosong";
   if (dataArray.length < 5) throw "Jumlah angka dalam dataArray harus lebih dari 5";
 
   for (let i = 0; i < dataArray.length; i++) {
@@ -25,7 +25,7 @@ function cekValidasi_dataArray(dataArray) {
       throw "Nilai dalam dataArray harus berupa Angka";
     }
     else if ((dataArray[i] === "")) {
-      throw "Nilai dalam dataArray ada yang kosong, Mohon isi kembali";
+      throw "Nilai dalam dataArray ada yang kosong";
     }
   }
 }
