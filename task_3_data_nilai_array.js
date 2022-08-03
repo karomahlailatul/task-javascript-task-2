@@ -14,6 +14,8 @@ function cekValidasi_nilaiAwal_nilaiAkhir(nilaiAwal, nilaiAkhir) {
   if (nilaiAkhir === "") throw "Nilai akhir kosong";
   if (isNaN(nilaiAkhir)) throw "Nilai akhir harus berupa Angka";
   if (nilaiAkhir < nilaiAwal) throw "Nilai akhir harus lebih besar dari nilai awal";
+  nilaiAwal = Number(nilaiAwal);
+  nilaiAkhir = Number(nilaiAkhir);
 }
 
 function cekValidasi_dataArray(dataArray) {

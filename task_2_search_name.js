@@ -1,4 +1,4 @@
-var ages = ["Abigail", "Alexandra", "Alison",
+var name = ["Abigail", "Alexandra", "Alison",
     "Amanda", "Angela", "Bella",
     "Carol", "Caroline", "Carolyn",
     "Deirdre", "Diana", "Elizabeth",
@@ -36,7 +36,7 @@ function prosesSearchName(input, outputCount, callback) {
 
     dataElement = [];
 
-    ages.map((element) => {
+    name.map((element) => {
         const isiElement = element.toLowerCase();
         if (isiElement.indexOf(filter) != -1) {
             dataElement.push(element);
@@ -63,6 +63,8 @@ function callback(result) {
 searchName("an", 3, callback);
 
 //testing error
+
+searchName("ami", 3, callback);
 
 searchName("", 3, callback);
 
