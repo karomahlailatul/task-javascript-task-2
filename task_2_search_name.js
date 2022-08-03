@@ -62,7 +62,7 @@ function callback(result) {
 
 searchName("an", 3, callback);
 
-//testing error
+// testing error
 
 searchName("ami", 3, callback);
 

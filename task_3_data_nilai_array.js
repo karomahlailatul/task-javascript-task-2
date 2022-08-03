@@ -52,7 +52,7 @@ seleksiNilai(5, 17, [2, 25, 4]);
 
 seleksiNilai(5, 17, [2, 25, 4, 1, 30, 18]);
 
-//testing error
+// testing error
 
 seleksiNilai("", 17, [2, 25, 4, 1, 30, 18]);
 
