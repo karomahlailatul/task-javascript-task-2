@@ -63,6 +63,7 @@ function callback(result) {
 searchName("an", 3, callback);
 
 //testing error
+
 searchName("", 3, callback);
 
 searchName(1, 3, callback);
