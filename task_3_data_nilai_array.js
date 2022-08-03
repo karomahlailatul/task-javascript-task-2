@@ -62,6 +62,6 @@ seleksiNilai(6, "", [2, 25, 4, 1, 30, 18]);
 
 seleksiNilai(6, "tujuh", [2, 25, 4, 1, 30, 18]);
 
-seleksiNilai(6, 8, ["", 4, 1, 30, 18]);
+seleksiNilai(6, 8, [1, 4, 1, 30, 18, ""]);
 
 seleksiNilai(6, 8, [2, "delapan", 4, 1, 30, 18]);

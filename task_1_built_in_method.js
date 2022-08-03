@@ -1,13 +1,13 @@
 // build in number method
 
-// // 1. .valueOf()
-// // ialah untuk memunculkan hasil data di dalam object bisa berupa Number ,Boolean, atau String, Date
-// // contohnya
+// 1. .valueOf()
+// ialah untuk memunculkan hasil data di dalam object bisa berupa Number ,Boolean, atau String, Date
+// contohnya
 // let x = new Number(12.321);
 // let x = new Boolean(true);
 // let x = new String("Data String Text");
 // let x = new Date(2021, 6, 28, 11, 2, 30);
-// // untuk date lebih menekankan jumlah total seluruh detik bukan untuk mempresentasikan hari, tahun, bulan tanggal, jam ,menit, maupun detik
+// untuk date lebih menekankan jumlah total seluruh detik bukan untuk mempresentasikan hari, tahun, bulan tanggal, jam ,menit, maupun detik
 
 // console.log(`Hasil Data .valueOf() adalah ${x.valueOf()}`);
 // console.log(`Jenis Type data sebelum menggunakan .valueOf adalah ${typeof (x)}`);
@@ -28,15 +28,15 @@
 
 
 
-// // 2. .toString()
-// // ialah untuk mengubah data menjadi string bisa berupa Number ,Boolean, atau String, Array, Date
+// 2. .toString()
+// ialah untuk mengubah data menjadi string bisa berupa Number ,Boolean, atau String, Array, Date
 // contohnya
 // let x = 12.321;
 // let x = true;
 // let x = "Data String Text";
 // let x = ["orange", "mango", "banana", "sugar"];
-// let x = new Date(2021, 6, 28, 11, 2, 30);
-// untuk date penekanan hasil di format hari:bulan:tanggal:tahun:jam:menit:detik kemudian wilayah
+// // let x = new Date(2021, 6, 28, 11, 2, 30);
+// // untuk date penekanan hasil di format hari: bulan: tanggal: tahun: jam: menit:detik kemudian wilayah
 
 // let xy = x.toString();
 // console.log(`Hasil Data .toString() adalah ${xy}`);
@@ -58,9 +58,9 @@
 
 
 
-// // 3. .concat()
-// // ialah untuk menyisipkan data menjadi ke data baru hanya berlaku pada String dan Array
-// // hampir sama seperti spread operator
+// 3. .concat()
+// ialah untuk menyisipkan data menjadi ke data baru hanya berlaku pada String dan Array
+// hampir sama seperti spread operator
 // contohnya
 // let x = "ayam dan kambing";
 // let y = "dibikin sate";
@@ -94,14 +94,14 @@
 // // contohnya
 // let x = "ayam dan kambing dibikin sate";
 // let xy = x.indexOf("dan");
-// index dimulai dari 0 langsung cari itemnya apa nanti diindex
+// //index dimulai dari 0 langsung cari itemnya apa nanti diindex
 
-// // Untuk Array
-// // menggunakan syntax .indexOf( search item , item dimulai )
-// // contohnya
-// let x = ["ayam", "kambing", "sapi", "ikan"];
-// let xy = x.indexOf("ikan", 0);
-// // index dimulai dari 0 cari itemnya apa nanti dicari mulai dari index keberapa
+// // // Untuk Array
+// // // menggunakan syntax .indexOf( search item , item dimulai )
+// // // contohnya
+// // let x = ["ayam", "kambing", "sapi", "ikan"];
+// // let xy = x.indexOf("ikan", 0);
+// // // index dimulai dari 0 cari itemnya apa nanti dicari mulai dari index keberapa
 
 // console.log(`Hasil Data .indexOf() adalah ${xy}`);
 
@@ -124,7 +124,7 @@
 
 
 // // 5. .length()
-// // ialah untuk menentukan jumlah data pada string
+// // ialah untuk menentukan jumlah data pada string maupun array
 // // // contohnya
 // let x = "ayam dan kambing dibikin sate";
 // let xy = x.length;
@@ -190,12 +190,12 @@
 
 
 
-// // 8. .pop()
-// // ialah untuk menampilkan data yang terhapus paling belakang pada Array, bisa seluruh data , bisa hanya data yang terhapus
+// 8. .pop()
+// ialah untuk menampilkan data yang terhapus paling belakang pada Array, bisa seluruh data , bisa hanya data yang terhapus
 
 // let x = ["ayam", "kambing", "sapi", "ikan"];
 
-// // ada 2 metode untuk menampilkan hasil pop yaitu :
+// ada 2 metode untuk menampilkan hasil pop yaitu :
 
 // // 1. hasil seluruh data array yang telah dihapus dari belakang
 // // contohnya
@@ -232,12 +232,12 @@
 
 // let x = ["ayam", "kambing", "sapi", "ikan"];
 // let y = ["kelinci"];
-// let z = ["kudanil", "paus"];
+// // let z = ["kudanil", "paus"];
 
 // x.push(y);
-// // untuk push array y ke array x
-// x.push(z);
-// // untuk push array z ke array x
+// // // untuk push array y ke array x
+// // x.push(z);
+// // // untuk push array z ke array x
 
 // console.log(`Hasil Data .push() adalah ${x}`);
 
@@ -266,11 +266,11 @@
 // // menggunakan arrow function
 // let xy = x.filter((y) => y >= 10);
 
-// // menggunakan callback
-// function xyz(y) {
-//     return y >= 10;
-// };
+// // // menggunakan callback
+// // function xyz(y) {
+// //     return y >= 10;
+// // };
 
-// let xy = x.filter(xyz);
+// // let xy = x.filter(xyz);
 
 // console.log(`Hasil Data .filter() adalah ${xy}`);
